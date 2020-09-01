@@ -5,5 +5,6 @@ from .views import Login
 
 
 urlpatterns = [
-	url(r'^$', Login , name="Login")
+	url('', Login.as_view() , name="Login"),
+	url('login/', Login.as_view() , name="Login")
 ]
