@@ -1,0 +1,19 @@
+{
+	"config":{
+		"characterType":"Solar",
+		"tabs":["core","background","equiptment","charms"],
+		"tabConfig":{
+			"core":"",
+			"background":"",
+			"equiptment":"",
+			"charms":""
+		}
+	},
+	"data":{
+		"core":{},
+		"background":{},
+		"equiptment":{},
+		"charms":{}
+
+	}
+}
