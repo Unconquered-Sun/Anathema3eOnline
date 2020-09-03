@@ -4,10 +4,50 @@
 		"tabs":["core","background","equiptment","charms"],
 		"tabConfig":{
 			"core":{
-				"tabButton":"<button id=\"coreButton\">Core<\/button>",
-				"tabButtonID":"coreButton",
-				"content":"<div id=\"character_container\"><\/div><div id=\"attribute_container\"><\/div><div id=\"ability_container\"><\/div><div id=\"merit_container\"><\/div><div id=\"other_container\"><\/div>",
-				"contentIDs":["character_container","attribute_container","ability_container","merit_container","other_container"]
+				"tabButton":{
+					"htmlType":"button",
+					"htmlContent":"Core",
+					"htmlAttributes":{
+						"id":"coreButton"
+					}
+				},				
+				"content":[
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"character_container"
+						}
+					},
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"attribute_container"
+						}
+					},
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"ability_container"
+						}
+					},
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"merit_container"
+						}
+					},
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"other_container"
+						}
+					}
+				]
 			},
 			"background":{},
 			"equiptment":{},
