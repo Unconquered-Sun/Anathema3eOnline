@@ -5,6 +5,8 @@ from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from django.views.generic import View
 
+import json
+
 # Create your views here.
 class Login(View):
 	def get(self, request):
@@ -43,3 +45,11 @@ class CreateUser(View):
 			return render(request, "anathemaapp/home.html", {'user':user.id})
 		else:
 			return render(request, "anathemaapp/createuser.html", {"forms": UserCreationForm(request.POST) })
+
+class Anathema(View):
+	def get(self, request):
+		print("Anathema Get")
+
+		
+
+		return render(request, "anathemaapp/anathema.html")
