@@ -16,7 +16,7 @@
 	},
 	"data":{
 		"core":{
-			"html":[ //Pattern;{"targetID":"","html":"<div id=...></div>","htmlID":"...",dataType":"dots","data":""}  dataTypes none, dots, textbox, textboxdots   
+			"html":[ 
 				{
 					"targetID":"attribute_container",
 					"html":"<div id='physical_attributes'></div><div id='social_attributes'></div><div id='mental_attributes'></div>",
@@ -31,6 +31,86 @@
 						"value":3,
 						"maximum":5
 					}
+				},
+				{
+					"targetID":"physical_attributes",
+					"html":"<div id='dexterity'></div>",
+					"htmlID":"dexterity",
+					"dataType":"dots",
+					"data":{
+						"value":4,
+						"maximum":5
+					}
+				},
+				{
+					"targetID":"physical_attributes",
+					"html":"<div id='stamina'></div>",
+					"htmlID":"stamina",
+					"dataType":"dots",
+					"data":{
+						"value":2,
+						"maximum":5
+					}
+				},
+				{
+					"targetID":"social_attributes",
+					"html":"<div id='charisma'></div>",
+					"htmlID":"charisma",
+					"dataType":"dots",
+					"data":{
+						"value":4,
+						"maximum":5
+					}
+				},
+				{
+					"targetID":"social_attributes",
+					"html":"<div id='manipulation'></div>",
+					"htmlID":"manipulation",
+					"dataType":"dots",
+					"data":{
+						"value":3,
+						"maximum":5
+					}
+				},
+				{
+					"targetID":"social_attributes",
+					"html":"<div id='appearance'></div>",
+					"htmlID":"appearance",
+					"dataType":"dots",
+					"data":{
+						"value":2,
+						"maximum":5
+					}
+				},
+				{
+					"targetID":"mental_attributes",
+					"html":"<div id='intelligence'></div>",
+					"htmlID":"intelligence",
+					"dataType":"dots",
+					"data":{
+						"value":2,
+						"maximum":5
+					}
+				},
+				{
+					"targetID":"mental_attributes",
+					"html":"<div id='wits'></div>",
+					"htmlID":"wits",
+					"dataType":"dots",
+					"data":{
+						"value":3,
+						"maximum":5
+					}
+				},
+				{
+					"targetID":"mental_attributes",
+					"html":"<div id='perception'></div>",
+					"htmlID":"perception",
+					"dataType":"dots",
+					"data":{
+						"value":2,
+						"maximum":5
+					}
 				}
 			]
 		},
@@ -39,4 +119,4 @@
 		"charms":{}
 
 	}
-}z 
+}
