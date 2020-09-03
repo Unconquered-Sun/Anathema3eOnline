@@ -3,10 +3,13 @@
 		"characterType":"Solar",
 		"tabs":["core","background","equiptment","charms"],
 		"tabConfig":{
-			"core":"",
-			"background":"",
-			"equiptment":"",
-			"charms":""
+			"core":{
+				"tabButton":"<button>Core</button>",
+				"content":"<div id='character_container'></div><div id='attribute_container'></div><div id='ability_container'></div>",
+			},
+			"background":{},
+			"equiptment":{},
+			"charms":{}
 		}
 	},
 	"data":{
@@ -16,4 +19,4 @@
 		"charms":{}
 
 	}
-}
+}z 
