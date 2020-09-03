@@ -4,6 +4,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from django.views.generic import View
+from django.core import serializers
 
 import json
 
@@ -50,6 +51,10 @@ class Anathema(View):
 	def get(self, request):
 		print("Anathema Get")
 
-		
+		#Temporary Json Loading code
+		testJSON = {}
+		with open("exaltedTestJSON.JSON") as jsonFile:
+			testJSON = json.load(jsonFile)
+			print(testJSON)
 
-		return render(request, "anathemaapp/anathema.html")
+		return render(request, "anathemaapp/anathema.html", {"exalt":testJSON})
