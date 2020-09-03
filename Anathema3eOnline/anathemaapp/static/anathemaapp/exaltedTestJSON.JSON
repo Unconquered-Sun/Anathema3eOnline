@@ -4,8 +4,10 @@
 		"tabs":["core","background","equiptment","charms"],
 		"tabConfig":{
 			"core":{
-				"tabButton":"<button>Core</button>",
-				"content":"<div id='character_container'></div><div id='attribute_container'></div><div id='ability_container'></div>",
+				"tabButton":"<button id='coreButton'>Core</button>",
+				"tabButtonID":"coreButton",
+				"content":"<div id='character_container'></div><div id='attribute_container'></div><div id='ability_container'></div><div id='merit_container'></div><div id='other_container'></div>",
+				"contentIDs":["character_container","attribute_container","ability_container","merit_container","other_container"]
 			},
 			"background":{},
 			"equiptment":{},
@@ -13,7 +15,25 @@
 		}
 	},
 	"data":{
-		"core":{},
+		"core":{
+			"html":[ //Pattern;{"targetID":"","html":"<div id=...></div>","htmlID":"...",dataType":"dots","data":""}  dataTypes none, dots, textbox, textboxdots   
+				{
+					"targetID":"attribute_container",
+					"html":"<div id='physical_attributes'></div><div id='social_attributes'></div><div id='mental_attributes'></div>",
+					"dataTypes":"none"
+				},
+				{
+					"targetID":"physical_attributes",
+					"html":"<div id='strength'></div>",
+					"htmlID":"strength",
+					"dataType":"dots",
+					"data":{
+						"value":3,
+						"maximum":5
+					}
+				}
+			]
+		},
 		"background":{},
 		"equiptment":{},
 		"charms":{}
