@@ -22,6 +22,18 @@ $(document).ready(function(){
 		}
 	}
 
+	//Determine which tab is the primary tab
+	var currentTab = exalt_config.startingTab;
+
+	//Use the currentTab to generate the tab's base HTML
+	if( tabConfig[currentTab].hasOwnProperty("content") ){
+		$("#content").html( loadHTML( tabConfig[currentTab]["content"] ) )
+	}
+	else{
+		console.log("NO TAB CONTENT");
+		$("#content").html("NO TAB CONTENT");
+	}
+
 
 
 

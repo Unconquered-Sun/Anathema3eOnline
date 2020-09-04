@@ -63,8 +63,28 @@
 						}				
 				]
 			},
-			"equiptmentTab":{},
-			"charmsTab":{}
+			"equiptmentTab":{
+				"tabButton":[
+						{
+							"htmlType":"button",
+							"htmlContent":"Equiptment",
+							"htmlAttributes":{
+								"id":"equiptmentButton"
+							}
+						}				
+				]
+			},
+			"charmsTab":{
+				"tabButton":[
+						{
+							"htmlType":"button",
+							"htmlContent":"Charms",
+							"htmlAttributes":{
+								"id":"charmButton"
+							}
+						}				
+				]
+			}
 		}
 	},
 	"data":{
