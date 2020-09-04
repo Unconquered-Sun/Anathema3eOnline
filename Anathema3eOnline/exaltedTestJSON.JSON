@@ -114,7 +114,7 @@
 						}
 					}
 				],
-				"dataTypes":"none"
+				"dataType":"none"
 			},
 			{
 
@@ -271,9 +271,9 @@
 				}
 			}
 		],
-		"backgroundTab":{},
-		"equiptmentTab":{},
-		"charmsTab":{}
+		"backgroundTab":[],
+		"equiptmentTab":[],
+		"charmsTab":[]
 
 	}
 }
