@@ -52,7 +52,17 @@
 					}
 				]
 			},
-			"backgroundTab":{},
+			"backgroundTab":{
+				"tabButton":[
+						{
+							"htmlType":"button",
+							"htmlContent":"Background",
+							"htmlAttributes":{
+								"id":"backgroundButton"
+							}
+						}				
+				]
+			},
 			"equiptmentTab":{},
 			"charmsTab":{}
 		}
