@@ -1,122 +1,249 @@
 {
 	"config":{
 		"characterType":"Solar",
-		"tabs":["core","background","equiptment","charms"],
+		"tabs":["coreTab","backgroundTab","equiptmentTab","charmsTab"],
+		"startingTab":"coreTab",
 		"tabConfig":{
-			"core":{
-				"tabButton":"<button id='coreButton'>Core</button>",
-				"tabButtonID":"coreButton",
-				"content":"<div id='character_container'></div><div id='attribute_container'></div><div id='ability_container'></div><div id='merit_container'></div><div id='other_container'></div>",
-				"contentIDs":["character_container","attribute_container","ability_container","merit_container","other_container"]
+			"coreTab":{
+				"tabButton":[
+						{
+							"htmlType":"button",
+							"htmlContent":"Core",
+							"htmlAttributes":{
+								"id":"coreButton"
+							}
+						}				
+				],
+				"content":[
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"character_container"
+						}
+					},
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"attribute_container"
+						}
+					},
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"ability_container"
+						}
+					},
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"merit_container"
+						}
+					},
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"other_container"
+						}
+					}
+				]
 			},
-			"background":{},
-			"equiptment":{},
-			"charms":{}
+			"backgroundTab":{},
+			"equiptmentTab":{},
+			"charmsTab":{}
 		}
 	},
 	"data":{
-		"core":{
-			"html":[ 
-				{
-					"targetID":"attribute_container",
-					"html":"<div id='physical_attributes'></div><div id='social_attributes'></div><div id='mental_attributes'></div>",
-					"dataTypes":"none"
-				},
-				{
-					"targetID":"physical_attributes",
-					"html":"<div id='strength'></div>",
-					"htmlID":"strength",
-					"dataType":"dots",
-					"data":{
-						"value":3,
-						"maximum":5
+		"coreTab":[ 
+			{
+				"targetID":"attribute_container",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"physical_attributes"
+						}
+					},
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"social_attributes"
+						}
+					},
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"mental_attributes"
+						}
 					}
-				},
-				{
-					"targetID":"physical_attributes",
-					"html":"<div id='dexterity'></div>",
-					"htmlID":"dexterity",
-					"dataType":"dots",
-					"data":{
-						"value":4,
-						"maximum":5
+				],
+				"dataTypes":"none"
+			},
+			{
+
+				"targetID":"physical_attributes",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"Strength: ",
+						"htmlAttributes":{
+							"id":"strength"
+						}
 					}
-				},
-				{
-					"targetID":"physical_attributes",
-					"html":"<div id='stamina'></div>",
-					"htmlID":"stamina",
-					"dataType":"dots",
-					"data":{
-						"value":2,
-						"maximum":5
-					}
-				},
-				{
-					"targetID":"social_attributes",
-					"html":"<div id='charisma'></div>",
-					"htmlID":"charisma",
-					"dataType":"dots",
-					"data":{
-						"value":4,
-						"maximum":5
-					}
-				},
-				{
-					"targetID":"social_attributes",
-					"html":"<div id='manipulation'></div>",
-					"htmlID":"manipulation",
-					"dataType":"dots",
-					"data":{
-						"value":3,
-						"maximum":5
-					}
-				},
-				{
-					"targetID":"social_attributes",
-					"html":"<div id='appearance'></div>",
-					"htmlID":"appearance",
-					"dataType":"dots",
-					"data":{
-						"value":2,
-						"maximum":5
-					}
-				},
-				{
-					"targetID":"mental_attributes",
-					"html":"<div id='intelligence'></div>",
-					"htmlID":"intelligence",
-					"dataType":"dots",
-					"data":{
-						"value":2,
-						"maximum":5
-					}
-				},
-				{
-					"targetID":"mental_attributes",
-					"html":"<div id='wits'></div>",
-					"htmlID":"wits",
-					"dataType":"dots",
-					"data":{
-						"value":3,
-						"maximum":5
-					}
-				},
-				{
-					"targetID":"mental_attributes",
-					"html":"<div id='perception'></div>",
-					"htmlID":"perception",
-					"dataType":"dots",
-					"data":{
-						"value":2,
-						"maximum":5
-					}
+				],
+				"dataType":"dots",
+				"data":{
+					"value":3,
+					"maximum":5
 				}
-			]
-		},
-		"background":{},
-		"equiptment":{},
-		"charms":{}
+			},
+			{
+				"targetID":"physical_attributes",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"Dexterity: ",
+						"htmlAttributes":{
+							"id":"dexterity"
+						}
+					}
+				],
+				"dataType":"dots",
+				"data":{
+					"value":4,
+					"maximum":5
+				}
+			},
+			{
+				"targetID":"physical_attributes",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"Stamina: ",
+						"htmlAttributes":{
+							"id":"stamina"
+						}
+					}
+				],
+				"dataType":"dots",
+				"data":{
+					"value":2,
+					"maximum":5
+				}
+			},
+			{
+				"targetID":"social_attributes",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"Charisma: ",
+						"htmlAttributes":{
+							"id":"charisma"
+						}
+					}
+				],
+				"dataType":"dots",
+				"data":{
+					"value":4,
+					"maximum":5
+				}
+			},
+			{
+				"targetID":"social_attributes",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"Manipulation: ",
+						"htmlAttributes":{
+							"id":"manipulation"
+						}
+					}
+				],
+				"dataType":"dots",
+				"data":{
+					"value":3,
+					"maximum":5
+				}
+			},
+			{
+				"targetID":"social_attributes",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"Appearance: ",
+						"htmlAttributes":{
+							"id":"appearance"
+						}
+					}
+				],
+				"dataType":"dots",
+				"data":{
+					"value":2,
+					"maximum":5
+				}
+			},
+			{
+				"targetID":"mental_attributes",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"Intelligence:",
+						"htmlAttributes":{
+							"id":"intelligence"
+						}
+					}
+				],
+				"dataType":"dots",
+				"data":{
+					"value":2,
+					"maximum":5
+				}
+			},
+			{
+				"targetID":"mental_attributes",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"Wits: ",
+						"htmlAttributes":{
+							"id":"wits"
+						}
+					}
+				],
+				"dataType":"dots",
+				"data":{
+					"value":3,
+					"maximum":5
+				}
+			},
+			{
+				"targetID":"mental_attributes",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"Perception",
+						"htmlAttributes":{
+							"id":"perception"
+						}
+					}
+				],
+				"dataType":"dots",
+				"data":{
+					"value":2,
+					"maximum":5
+				}
+			}
+		],
+		"backgroundTab":{},
+		"equiptmentTab":{},
+		"charmsTab":{}
 
 	}
 }
