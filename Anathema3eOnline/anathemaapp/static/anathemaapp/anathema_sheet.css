@@ -1,8 +1,13 @@
-
 .triple_outer_container{
 	text-align: left;
 }
 .triple_outer_container > div{
+	display:inline-block;
+}
+[class$="-dot"]{
+	display:inline-block;
+}
+[class$="-dots"]{
 	display:inline-block;
 }
 .value{

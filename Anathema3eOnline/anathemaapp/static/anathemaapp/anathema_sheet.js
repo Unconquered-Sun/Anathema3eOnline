@@ -1,6 +1,8 @@
 $(document).ready(function(){
 	console.log("Document Start");
-	
+
+
+
 	//Process JSON
 	var json_text = $("#exalt_data").attr("exalt_data");
 	json_text = json_text.split("'").join('"');
@@ -37,9 +39,6 @@ $(document).ready(function(){
 	loadTab(currentTab);
 
 
-
-
-
 	//Load contents of the current Tab
 	function loadTab(tabName){
 		console.log("Start Tab Load")
@@ -70,7 +69,7 @@ $(document).ready(function(){
 					console.log("Dots Data")
 
 
-					createDots(tabData[j]["html"][0]["htmlAttributes"]["id"] ,tabData[j]["targetID"], tabData[j]["data"]["maximum"], tabData[j]["data"]["value"])
+					createDots(tabData[j]["html"][0]["htmlAttributes"]["id"] ,tabData[j]["html"][0]["htmlAttributes"]["id"], tabData[j]["data"]["maximum"], tabData[j]["data"]["value"])
 				}
 				else if( tabData[j]["dataType"] == "text" ){
 					console.log("Text Data")
@@ -118,14 +117,15 @@ $(document).ready(function(){
 		htmlOutput = '<div id="'+ID+'.dots">'
 		for(var k=1; k<=maximum; k++){
 			if(k<=value){
-				htmlOutput = htmlOutput+'<p id="'+ID+'.dot.'+k+'" class="'+ID+'.dot">●</p>'
+				htmlOutput = htmlOutput+'<p id="'+ID+'-dot-'+k+'" class="'+ID+'-dot">●</p>'
 			}
 			else{
-				htmlOutput = htmlOutput+'<p id="'+ID+'.dot.'+k+'" class="'+ID+'.dot">○</p>'
+				htmlOutput = htmlOutput+'<p id="'+ID+'-dot-'+k+'" class="'+ID+'-dot">○</p>'
 			}
 		}
 		htmlOutput = htmlOutput+"</div>"
 		htmlTarget = "#"+target
 		$(htmlTarget).append(htmlOutput);
 	}
+
 });
