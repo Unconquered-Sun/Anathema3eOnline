@@ -45,11 +45,10 @@ $(document).ready(function(){
 		console.log("Start Tab Load")
 		//Check if tabName exists as a key in exalt_data
 		if( exalt_data.hasOwnProperty(tabName) ){
-			console.log("In Tab")
 			tabData = exalt_data[tabName];
 			console.log(tabData.length)
 			//Iterate through the tabData
-			for(j = 0; j<tabData.length; j++){
+			for(var j = 0; j<tabData.length; j++){
 				console.log("HTML #"+j);
 				// console.log(tabData[i])
 				//Begin by creating the content and appending it to the associated ID
@@ -63,20 +62,25 @@ $(document).ready(function(){
 					//dots: data is shown in dots and will contain a value and maximum
 					//text: data is shown in a textbox and will contain a value
 					//textdots: data is shown in a textbox with dots after it. Contains a textValue, dotValue, and dotMaximum
+				console.log(tabData[j]["dataType"])
 				if( tabData[j]["targetID"]["dataType"] == "none" ){
+					console.log("No Data")
+				}
+				else if( tabData[j]["dataType"] == "dots" ){
+					console.log("Dots Data")
 
-				}
-				else if( tabData[j]["targetID"]["dataType"] == "dots" ){
 
+					createDots(tabData[j]["html"][0]["htmlAttributes"]["id"] ,tabData[j]["targetID"], tabData[j]["data"]["maximum"], tabData[j]["data"]["value"])
 				}
-				else if( tabData[j]["targetID"]["dataType"] == "text" ){
-					
+				else if( tabData[j]["dataType"] == "text" ){
+					console.log("Text Data")
 				}
-				else if( tabData[j]["targetID"]["dataType"] == "textdots" ){
-					
+				else if( tabData[j]["dataType"] == "textdots" ){
+					console.log("Text and Dots Data")
 				}
 				else{
 					//SCREAMS GEOMETRICALLY
+					console.log("Data Error")
 				}
 			}
 		}
@@ -92,7 +96,7 @@ $(document).ready(function(){
 		//htmlOutput will contain the final HTML formed from the list
 		htmlOutput = "";
 		//Process all htmlJSONs passed in the list
-		for(i=0; i<htmlJSONList.length; i++){
+		for(var i=0; i<htmlJSONList.length; i++){
 			htmlJSON = htmlJSONList[i];
 			//create the opening of the tag
 			tempHTML = "<"+htmlJSON["htmlType"]+" ";
@@ -107,5 +111,21 @@ $(document).ready(function(){
 		}
 		//return the result
 		return htmlOutput;
+	}
+
+	function createDots(ID, target, maximum, value){
+		console.log("Creating Dots")
+		htmlOutput = '<div id="'+ID+'.dots">'
+		for(var k=1; k<=maximum; k++){
+			if(k<=value){
+				htmlOutput = htmlOutput+'<p id="'+ID+'.dot.'+k+'" class="'+ID+'.dot">●</p>'
+			}
+			else{
+				htmlOutput = htmlOutput+'<p id="'+ID+'.dot.'+k+'" class="'+ID+'.dot">○</p>'
+			}
+		}
+		htmlOutput = htmlOutput+"</div>"
+		htmlTarget = "#"+target
+		$(htmlTarget).append(htmlOutput);
 	}
 });
