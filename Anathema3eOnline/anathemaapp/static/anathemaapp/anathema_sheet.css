@@ -1,11 +1,10 @@
 .triple_outer_container{
-	text-align: left;
-}
-.triple_outer_container > div{
 	display:inline-block;
+	padding-right:5%;
 }
 [class$="-dot"]{
 	display:inline-block;
+	font-size:150%;
 }
 [class$="-dots"]{
 	display:inline-block;

@@ -96,21 +96,24 @@
 						"htmlType":"div",
 						"htmlContent":"",
 						"htmlAttributes":{
-							"id":"physical_attributes"
+							"id":"physical_attributes",
+							"class":"triple_outer_container"
 						}
 					},
 					{
 						"htmlType":"div",
 						"htmlContent":"",
 						"htmlAttributes":{
-							"id":"social_attributes"
+							"id":"social_attributes",
+							"class":"triple_outer_container"
 						}
 					},
 					{
 						"htmlType":"div",
 						"htmlContent":"",
 						"htmlAttributes":{
-							"id":"mental_attributes"
+							"id":"mental_attributes",
+							"class":"triple_outer_container"
 						}
 					}
 				],
