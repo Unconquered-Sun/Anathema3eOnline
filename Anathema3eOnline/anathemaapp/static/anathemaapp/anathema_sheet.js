@@ -38,6 +38,12 @@ $(document).ready(function(){
 
 	loadTab(currentTab);
 
+	//Generic Dot Click Event
+	$("body").on("click",'[class$="-dot"]',function(){
+		console.log("PING"+$(this).attr("id"))
+	});
+
+
 
 	//Load contents of the current Tab
 	function loadTab(tabName){
@@ -112,6 +118,7 @@ $(document).ready(function(){
 		return htmlOutput;
 	}
 
+	//Creates the Dots within the div with the matching ID
 	function createDots(ID, target, maximum, value){
 		console.log("Creating Dots")
 		htmlOutput = '<div id="'+ID+'.dots">'
