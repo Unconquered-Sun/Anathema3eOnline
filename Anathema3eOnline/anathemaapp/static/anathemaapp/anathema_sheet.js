@@ -38,9 +38,42 @@ $(document).ready(function(){
 
 	loadTab(currentTab);
 
-	//Generic Dot Click Event
+	//Generic Dot Click Event ○ ●
 	$("body").on("click",'[class$="-dot"]',function(){
-		console.log("PING"+$(this).attr("id"))
+		//Check if clicking on a filled or unfilled Dot
+		
+		//Get the base ID of the dots
+		baseID = $(this).attr("id").split("-")[0]
+		
+		//Get all associated dots
+		allDots = $('[id^="'+ baseID+"-dot-" +'"')
+
+		//Get the number of the clicked dot
+		clickedDot = $(this).attr("id").split("-").pop()
+
+		if( $(this).html() == "●"){
+			//Filled dot, so uncheck it and all dots after and fill all dots before it.
+			allDots.each(function(index){
+				if( $(this).attr("id").split("-").pop() < clickedDot ){
+					$(this).html("●")
+				}
+				else if( $(this).attr("id").split("-").pop() >= clickedDot ){
+					$(this).html("○")
+				}
+			});
+		}
+		else if($(this).html() == "○"){
+			//Unfilled Dot, so fill it and all dots before it and uncheck all dots after
+			allDots.each(function(index){
+				if( $(this).attr("id").split("-").pop() <= clickedDot ){
+					$(this).html("●")
+				}
+				else if( $(this).attr("id").split("-").pop() > clickedDot ){
+					$(this).html("○")
+				}
+			});
+		}
+
 	});
 
 
