@@ -118,6 +118,104 @@
 	"data":{
 		"coreTab":[ 
 			{
+				"targetID":"character_container",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"exalted_icon",
+							"class":"triple_outer_container"
+						}
+					},
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"character_info",
+							"class":"triple_outer_container"
+						}
+					},
+					{
+						"htmlType":"div",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"id":"character_other",
+							"class":"triple_outer_container"
+						}
+					}
+				],
+				"dataType":"none"
+			},
+			{
+				"targetID":"character_info",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"Name: ",
+						"htmlAttributes":{
+							"id":"name",
+							"class":"text-div"
+						}
+					}
+				],
+				"dataType":"text",
+				"data":{
+					"value":""
+				}
+			},
+			{
+				"targetID":"character_info",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"Concept Name: ",
+						"htmlAttributes":{
+							"id":"concept",
+							"class":"text-div"
+						}
+					}
+				],
+				"dataType":"text",
+				"data":{
+					"value":""
+				}
+			},
+			{
+				"targetID":"character_info",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"Anima: ",
+						"htmlAttributes":{
+							"id":"anima",
+							"class":"text-div"
+						}
+					}
+				],
+				"dataType":"text",
+				"data":{
+					"value":""
+				}
+			},
+			{
+				"targetID":"character_other",
+				"html":[
+					{
+						"htmlType":"div",
+						"htmlContent":"Player: ",
+						"htmlAttributes":{
+							"id":"player",
+							"class":"text-div"
+						}
+					}
+				],
+				"dataType":"text",
+				"data":{
+					"value":"TEST"
+				}
+			},
+			{
 				"targetID":"attribute_container",
 				"html":[
 					{

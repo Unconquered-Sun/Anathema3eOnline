@@ -6,6 +6,9 @@
 .dot-div{
 	display:inline;
 }
+[id$="-text"]{
+	display:inline;
+}
 [class$="-dot"]{
 	display:inline;
 	font-size:150%;

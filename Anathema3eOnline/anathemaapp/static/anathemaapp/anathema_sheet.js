@@ -39,8 +39,6 @@ $(document).ready(function(){
 	loadTab(currentTab);
 
 
-
-
 	//EVENT BINDINGS
 
 	//Generic Dot Click Event ○ ●
@@ -118,6 +116,8 @@ $(document).ready(function(){
 				}
 				else if( tabData[j]["dataType"] == "text" ){
 					console.log("Text Data")
+
+					createText(tabData[j]["html"][0]["htmlAttributes"]["id"], tabData[j]["html"][0]["htmlAttributes"]["id"],  tabData[j]["data"]["value"])
 				}
 				else if( tabData[j]["dataType"] == "textdots" ){
 					console.log("Text and Dots Data")
@@ -172,6 +172,14 @@ $(document).ready(function(){
 		htmlOutput = htmlOutput+"</div><br/>"
 		htmlTarget = "#"+target
 		$(htmlTarget).append(htmlOutput);
+	}
+
+	function createText(ID, target, value){
+		console.log("Creating Textbox")
+		htmlOutput = '<input id="'+ID+'-text" type="text" value="'+value+'"></input> <br/>'
+		htmlTarget = "#"+target
+		$(htmlTarget).append(htmlOutput)
+
 	}
 
 	//Temp save function. Should be called after every tab change and before the actual save function
