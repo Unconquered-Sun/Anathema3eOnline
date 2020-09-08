@@ -38,6 +38,11 @@ $(document).ready(function(){
 
 	loadTab(currentTab);
 
+
+
+
+	//EVENT BINDINGS
+
 	//Generic Dot Click Event ○ ●
 	$("body").on("click",'[class$="-dot"]',function(){
 		//Check if clicking on a filled or unfilled Dot
@@ -77,6 +82,7 @@ $(document).ready(function(){
 	});
 
 
+	//FUNCTIONS
 
 	//Load contents of the current Tab
 	function loadTab(tabName){
@@ -154,7 +160,7 @@ $(document).ready(function(){
 	//Creates the Dots within the div with the matching ID
 	function createDots(ID, target, maximum, value){
 		console.log("Creating Dots")
-		htmlOutput = '<div id="'+ID+'.dots">'
+		htmlOutput = '<div id="'+ID+'-dots">'
 		for(var k=1; k<=maximum; k++){
 			if(k<=value){
 				htmlOutput = htmlOutput+'<p id="'+ID+'-dot-'+k+'" class="'+ID+'-dot">●</p>'
@@ -163,9 +169,14 @@ $(document).ready(function(){
 				htmlOutput = htmlOutput+'<p id="'+ID+'-dot-'+k+'" class="'+ID+'-dot">○</p>'
 			}
 		}
-		htmlOutput = htmlOutput+"</div>"
+		htmlOutput = htmlOutput+"</div><br/>"
 		htmlTarget = "#"+target
 		$(htmlTarget).append(htmlOutput);
 	}
+
+	//Temp save function. Should be called after every tab change and before the actual save function
+
+
+	//Actual Save. Sends to the server to update the Server's JSON,
 
 });

@@ -127,7 +127,8 @@
 						"htmlType":"div",
 						"htmlContent":"Strength: ",
 						"htmlAttributes":{
-							"id":"strength"
+							"id":"strength",
+							"class":"dot-div"
 						}
 					}
 				],
@@ -144,7 +145,8 @@
 						"htmlType":"div",
 						"htmlContent":"Dexterity: ",
 						"htmlAttributes":{
-							"id":"dexterity"
+							"id":"dexterity",
+							"class":"dot-div"
 						}
 					}
 				],
@@ -161,7 +163,8 @@
 						"htmlType":"div",
 						"htmlContent":"Stamina: ",
 						"htmlAttributes":{
-							"id":"stamina"
+							"id":"stamina",
+							"class":"dot-div"
 						}
 					}
 				],
@@ -178,7 +181,8 @@
 						"htmlType":"div",
 						"htmlContent":"Charisma: ",
 						"htmlAttributes":{
-							"id":"charisma"
+							"id":"charisma",
+							"class":"dot-div"
 						}
 					}
 				],
@@ -195,7 +199,8 @@
 						"htmlType":"div",
 						"htmlContent":"Manipulation: ",
 						"htmlAttributes":{
-							"id":"manipulation"
+							"id":"manipulation",
+							"class":"dot-div"
 						}
 					}
 				],
@@ -212,7 +217,8 @@
 						"htmlType":"div",
 						"htmlContent":"Appearance: ",
 						"htmlAttributes":{
-							"id":"appearance"
+							"id":"appearance",
+							"class":"dot-div"
 						}
 					}
 				],
@@ -229,7 +235,8 @@
 						"htmlType":"div",
 						"htmlContent":"Intelligence:",
 						"htmlAttributes":{
-							"id":"intelligence"
+							"id":"intelligence",
+							"class":"dot-div"
 						}
 					}
 				],
@@ -246,7 +253,8 @@
 						"htmlType":"div",
 						"htmlContent":"Wits: ",
 						"htmlAttributes":{
-							"id":"wits"
+							"id":"wits",
+							"class":"dot-div"
 						}
 					}
 				],
@@ -263,7 +271,8 @@
 						"htmlType":"div",
 						"htmlContent":"Perception",
 						"htmlAttributes":{
-							"id":"perception"
+							"id":"perception",
+							"class":"dot-div"
 						}
 					}
 				],

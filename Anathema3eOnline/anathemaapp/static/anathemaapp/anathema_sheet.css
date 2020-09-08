@@ -2,28 +2,15 @@
 	display:inline-block;
 	padding-right:5%;
 }
+.dot-div{
+	display:inline;
+}
 [class$="-dot"]{
-	display:inline-block;
+	display:inline;
 	font-size:150%;
 }
-[class$="-dots"]{
-	display:inline-block;
-}
-.value{
-	display:inline-block;
-	vertical-align: top;
-	text-align: left;
-}
-.key{
-	display:inline-block;
-	vertical-align: top;
-	text-align: left;
-}
-.key > div{
-	padding-bottom: 2px;
-}
-.merits_key{
-	width:33%;
+[id$="-dots"]{
+	display:inline;
 }
 #divider{
 	width:75%;
