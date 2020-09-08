@@ -23,11 +23,25 @@
 						}
 					},
 					{
+						"htmlType":"hr",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"class":"divider"
+						}	
+					},
+					{
 						"htmlType":"div",
 						"htmlContent":"",
 						"htmlAttributes":{
 							"id":"attribute_container"
 						}
+					},
+					{
+						"htmlType":"hr",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"class":"divider"
+						}	
 					},
 					{
 						"htmlType":"div",
@@ -37,11 +51,25 @@
 						}
 					},
 					{
+						"htmlType":"hr",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"class":"divider"
+						}	
+					},
+					{
 						"htmlType":"div",
 						"htmlContent":"",
 						"htmlAttributes":{
 							"id":"merit_container"
 						}
+					},
+					{
+						"htmlType":"hr",
+						"htmlContent":"",
+						"htmlAttributes":{
+							"class":"divider"
+						}	
 					},
 					{
 						"htmlType":"div",

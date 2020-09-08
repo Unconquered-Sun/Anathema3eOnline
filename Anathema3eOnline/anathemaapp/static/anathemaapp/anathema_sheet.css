@@ -1,6 +1,7 @@
 .triple_outer_container{
+	text-align: left;
 	display:inline-block;
-	padding-right:5%;
+	padding-right:10%;
 }
 .dot-div{
 	display:inline;
@@ -12,8 +13,13 @@
 [id$="-dots"]{
 	display:inline;
 }
-#divider{
-	width:75%;
+[id$="_container"]{	
+	margin:auto;
+	width:50%;
+
+}
+.divider{
+	width:90%;
 	margin: 0 auto;
 	margin-top:10px;
 	margin-bottom:10px;
