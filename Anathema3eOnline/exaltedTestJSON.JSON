@@ -219,7 +219,7 @@
 				"targetID":"attribute_container",
 				"html":[
 					{
-						"htmlType":"div",
+						"htmlType":"table",
 						"htmlContent":"",
 						"htmlAttributes":{
 							"id":"physical_attributes",
@@ -227,7 +227,7 @@
 						}
 					},
 					{
-						"htmlType":"div",
+						"htmlType":"table",
 						"htmlContent":"",
 						"htmlAttributes":{
 							"id":"social_attributes",
@@ -235,7 +235,7 @@
 						}
 					},
 					{
-						"htmlType":"div",
+						"htmlType":"table",
 						"htmlContent":"",
 						"htmlAttributes":{
 							"id":"mental_attributes",
@@ -246,12 +246,11 @@
 				"dataType":"none"
 			},
 			{
-
 				"targetID":"physical_attributes",
 				"html":[
 					{
-						"htmlType":"div",
-						"htmlContent":"Strength: ",
+						"htmlType":"tr",
+						"htmlContent":"<td>Strength: </td>",
 						"htmlAttributes":{
 							"id":"strength",
 							"class":"dot-div"
@@ -268,8 +267,8 @@
 				"targetID":"physical_attributes",
 				"html":[
 					{
-						"htmlType":"div",
-						"htmlContent":"Dexterity: ",
+						"htmlType":"tr",
+						"htmlContent":"<td>Dexterity: </td>",
 						"htmlAttributes":{
 							"id":"dexterity",
 							"class":"dot-div"
@@ -286,8 +285,8 @@
 				"targetID":"physical_attributes",
 				"html":[
 					{
-						"htmlType":"div",
-						"htmlContent":"Stamina: ",
+						"htmlType":"tr",
+						"htmlContent":"<td>Stamina: </td>",
 						"htmlAttributes":{
 							"id":"stamina",
 							"class":"dot-div"
@@ -304,8 +303,8 @@
 				"targetID":"social_attributes",
 				"html":[
 					{
-						"htmlType":"div",
-						"htmlContent":"Charisma: ",
+						"htmlType":"tr",
+						"htmlContent":"<td>Charisma: </td>",
 						"htmlAttributes":{
 							"id":"charisma",
 							"class":"dot-div"
@@ -322,8 +321,8 @@
 				"targetID":"social_attributes",
 				"html":[
 					{
-						"htmlType":"div",
-						"htmlContent":"Manipulation: ",
+						"htmlType":"tr",
+						"htmlContent":"<td>Manipulation: </td>",
 						"htmlAttributes":{
 							"id":"manipulation",
 							"class":"dot-div"
@@ -340,8 +339,8 @@
 				"targetID":"social_attributes",
 				"html":[
 					{
-						"htmlType":"div",
-						"htmlContent":"Appearance: ",
+						"htmlType":"tr",
+						"htmlContent":"<td>Appearance: </td>",
 						"htmlAttributes":{
 							"id":"appearance",
 							"class":"dot-div"
@@ -358,8 +357,8 @@
 				"targetID":"mental_attributes",
 				"html":[
 					{
-						"htmlType":"div",
-						"htmlContent":"Intelligence:",
+						"htmlType":"tr",
+						"htmlContent":"<td>Intelligence: </td>",
 						"htmlAttributes":{
 							"id":"intelligence",
 							"class":"dot-div"
@@ -376,8 +375,8 @@
 				"targetID":"mental_attributes",
 				"html":[
 					{
-						"htmlType":"div",
-						"htmlContent":"Wits: ",
+						"htmlType":"tr",
+						"htmlContent":"<td>Wits: </td>",
 						"htmlAttributes":{
 							"id":"wits",
 							"class":"dot-div"
@@ -394,8 +393,8 @@
 				"targetID":"mental_attributes",
 				"html":[
 					{
-						"htmlType":"div",
-						"htmlContent":"Perception",
+						"htmlType":"tr",
+						"htmlContent":"<td>Perception: </td>",
 						"htmlAttributes":{
 							"id":"perception",
 							"class":"dot-div"

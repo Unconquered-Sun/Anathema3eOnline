@@ -157,19 +157,35 @@ $(document).ready(function(){
 		return htmlOutput;
 	}
 
+	// //Creates the Dots within the div with the matching ID
+	// function createDots(ID, target, maximum, value){
+	// 	console.log("Creating Dots")
+	// 	htmlOutput = '<div id="'+ID+'-dots">'
+	// 	for(var k=1; k<=maximum; k++){
+	// 		if(k<=value){
+	// 			htmlOutput = htmlOutput+'<p id="'+ID+'-dot-'+k+'" class="'+ID+'-dot">●</p>'
+	// 		}
+	// 		else{
+	// 			htmlOutput = htmlOutput+'<p id="'+ID+'-dot-'+k+'" class="'+ID+'-dot">○</p>'
+	// 		}
+	// 	}
+	// 	htmlOutput = htmlOutput+"</div><br/>"
+	// 	htmlTarget = "#"+target
+	// 	$(htmlTarget).append(htmlOutput);
+	// }
+
 	//Creates the Dots within the div with the matching ID
 	function createDots(ID, target, maximum, value){
 		console.log("Creating Dots")
-		htmlOutput = '<div id="'+ID+'-dots">'
+		htmlOutput = ""
 		for(var k=1; k<=maximum; k++){
 			if(k<=value){
-				htmlOutput = htmlOutput+'<p id="'+ID+'-dot-'+k+'" class="'+ID+'-dot">●</p>'
+				htmlOutput = htmlOutput+'<td id="'+ID+'-dot-'+k+'" class="'+ID+'-dot">●</td>'
 			}
 			else{
-				htmlOutput = htmlOutput+'<p id="'+ID+'-dot-'+k+'" class="'+ID+'-dot">○</p>'
+				htmlOutput = htmlOutput+'<td id="'+ID+'-dot-'+k+'" class="'+ID+'-dot">○</td>'
 			}
 		}
-		htmlOutput = htmlOutput+"</div><br/>"
 		htmlTarget = "#"+target
 		$(htmlTarget).append(htmlOutput);
 	}
