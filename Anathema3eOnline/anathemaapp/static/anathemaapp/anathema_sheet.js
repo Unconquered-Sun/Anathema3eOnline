@@ -121,6 +121,8 @@ $(document).ready(function(){
 				}
 				else if( tabData[j]["dataType"] == "textdots" ){
 					console.log("Text and Dots Data")
+
+					createTextDots(tabData[j]["html"][0]["htmlAttributes"]["id"], tabData[j]["html"][0]["htmlAttributes"]["id"], tabData[j]["data"]["textValue"], tabData[j]["data"]["dotValue"], tabData[j]["data"]["dotMaximum"])
 				}
 				else{
 					//SCREAMS GEOMETRICALLY
@@ -150,7 +152,8 @@ $(document).ready(function(){
 			}
 			//close the tag, add its content, and the closing tag
 			tempHTML = tempHTML+">"
-			if(htmlJSON["htmlType"] == "tr"){
+			//Add a TD tag if in a table and it contains some content
+			if(htmlJSON["htmlType"] == "tr" && htmlJSON["htmlContent"] != "" ){
 				tempHTML = tempHTML + "<td>" + htmlJSON["htmlContent"] + "</td>"
 			}
 			else{
@@ -163,23 +166,6 @@ $(document).ready(function(){
 		//return the result
 		return htmlOutput;
 	}
-
-	// //Creates the Dots within the div with the matching ID
-	// function createDots(ID, target, maximum, value){
-	// 	console.log("Creating Dots")
-	// 	htmlOutput = '<div id="'+ID+'-dots">'
-	// 	for(var k=1; k<=maximum; k++){
-	// 		if(k<=value){
-	// 			htmlOutput = htmlOutput+'<p id="'+ID+'-dot-'+k+'" class="'+ID+'-dot">●</p>'
-	// 		}
-	// 		else{
-	// 			htmlOutput = htmlOutput+'<p id="'+ID+'-dot-'+k+'" class="'+ID+'-dot">○</p>'
-	// 		}
-	// 	}
-	// 	htmlOutput = htmlOutput+"</div><br/>"
-	// 	htmlTarget = "#"+target
-	// 	$(htmlTarget).append(htmlOutput);
-	// }
 
 	//Creates the Dots within the div with the matching ID
 	function createDots(ID, target, maximum, value){
@@ -203,6 +189,25 @@ $(document).ready(function(){
 		htmlTarget = "#"+target
 		$(htmlTarget).append(htmlOutput)
 
+	}
+
+	//Create dots with a textbox instead of a name
+	function createTextDots(ID, target, textValue, dotValue, dotMaximum){
+		console.log("Creating Text Dots")
+		htmlOutput = ""
+		//Start with the textbox inside of a table cell 
+		htmlOutput = htmlOutput + '<td><input id="'+ID+'-text" type="text" value="'+textValue+'"></input></td>'
+		//create Dots
+		for(var k=1; k<=dotMaximum; k++){
+			if(k<=dotValue){
+				htmlOutput = htmlOutput+'<td id="'+ID+'-dot-'+k+'" class="'+ID+'-dot">●</td>'
+			}
+			else{
+				htmlOutput = htmlOutput+'<td id="'+ID+'-dot-'+k+'" class="'+ID+'-dot">○</td>'
+			}
+		}
+		htmlTarget = "#"+target
+		$(htmlTarget).append(htmlOutput);
 	}
 
 	//Temp save function. Should be called after every tab change and before the actual save function
