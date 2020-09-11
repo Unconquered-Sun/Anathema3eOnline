@@ -129,7 +129,7 @@
 						}
 					},
 					{
-						"htmlType":"div",
+						"htmlType":"table",
 						"htmlContent":"",
 						"htmlAttributes":{
 							"id":"character_info",
@@ -137,7 +137,7 @@
 						}
 					},
 					{
-						"htmlType":"div",
+						"htmlType":"table",
 						"htmlContent":"",
 						"htmlAttributes":{
 							"id":"character_other",
@@ -151,8 +151,8 @@
 				"targetID":"character_info",
 				"html":[
 					{
-						"htmlType":"div",
-						"htmlContent":"Name: ",
+						"htmlType":"tr",
+						"htmlContent":"<td>Name: </td>",
 						"htmlAttributes":{
 							"id":"name",
 							"class":"text-div"
@@ -168,8 +168,8 @@
 				"targetID":"character_info",
 				"html":[
 					{
-						"htmlType":"div",
-						"htmlContent":"Concept Name: ",
+						"htmlType":"tr",
+						"htmlContent":"<td>Concept Name: </td>",
 						"htmlAttributes":{
 							"id":"concept",
 							"class":"text-div"
@@ -185,8 +185,8 @@
 				"targetID":"character_info",
 				"html":[
 					{
-						"htmlType":"div",
-						"htmlContent":"Anima: ",
+						"htmlType":"tr",
+						"htmlContent":"<td>Anima: </td>",
 						"htmlAttributes":{
 							"id":"anima",
 							"class":"text-div"
@@ -202,8 +202,8 @@
 				"targetID":"character_other",
 				"html":[
 					{
-						"htmlType":"div",
-						"htmlContent":"Player: ",
+						"htmlType":"tr",
+						"htmlContent":"<td>Player: </td>",
 						"htmlAttributes":{
 							"id":"player",
 							"class":"text-div"
