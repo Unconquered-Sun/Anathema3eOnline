@@ -149,7 +149,14 @@ $(document).ready(function(){
 				tempHTML = tempHTML+key+"="+htmlJSON["htmlAttributes"][key]+" "
 			}
 			//close the tag, add its content, and the closing tag
-			tempHTML = tempHTML+">"+htmlJSON["htmlContent"]+"</"+htmlJSON["htmlType"]+">";
+			tempHTML = tempHTML+">"
+			if(htmlJSON["htmlType"] == "tr"){
+				tempHTML = tempHTML + "<td>" + htmlJSON["htmlContent"] + "</td>"
+			}
+			else{
+				tempHTML = tempHTML + htmlJSON["htmlContent"]
+			}
+			tempHTML = tempHTML + "</"+htmlJSON["htmlType"]+">";
 			// add to htmlOutput
 			htmlOutput = htmlOutput+tempHTML;
 		}

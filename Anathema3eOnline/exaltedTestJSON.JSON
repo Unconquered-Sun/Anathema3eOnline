@@ -152,7 +152,7 @@
 				"html":[
 					{
 						"htmlType":"tr",
-						"htmlContent":"<td>Name: </td>",
+						"htmlContent":"Name: ",
 						"htmlAttributes":{
 							"id":"name",
 							"class":"text-div"
@@ -169,7 +169,7 @@
 				"html":[
 					{
 						"htmlType":"tr",
-						"htmlContent":"<td>Concept Name: </td>",
+						"htmlContent":"Concept Name: ",
 						"htmlAttributes":{
 							"id":"concept",
 							"class":"text-div"
@@ -186,7 +186,7 @@
 				"html":[
 					{
 						"htmlType":"tr",
-						"htmlContent":"<td>Anima: </td>",
+						"htmlContent":"Anima: ",
 						"htmlAttributes":{
 							"id":"anima",
 							"class":"text-div"
@@ -203,7 +203,7 @@
 				"html":[
 					{
 						"htmlType":"tr",
-						"htmlContent":"<td>Player: </td>",
+						"htmlContent":"Player: ",
 						"htmlAttributes":{
 							"id":"player",
 							"class":"text-div"
@@ -250,7 +250,7 @@
 				"html":[
 					{
 						"htmlType":"tr",
-						"htmlContent":"<td>Strength: </td>",
+						"htmlContent":"Strength: ",
 						"htmlAttributes":{
 							"id":"strength",
 							"class":"dot-div"
@@ -268,7 +268,7 @@
 				"html":[
 					{
 						"htmlType":"tr",
-						"htmlContent":"<td>Dexterity: </td>",
+						"htmlContent":"Dexterity: ",
 						"htmlAttributes":{
 							"id":"dexterity",
 							"class":"dot-div"
@@ -286,7 +286,7 @@
 				"html":[
 					{
 						"htmlType":"tr",
-						"htmlContent":"<td>Stamina: </td>",
+						"htmlContent":"Stamina: ",
 						"htmlAttributes":{
 							"id":"stamina",
 							"class":"dot-div"
@@ -304,7 +304,7 @@
 				"html":[
 					{
 						"htmlType":"tr",
-						"htmlContent":"<td>Charisma: </td>",
+						"htmlContent":"Charisma: ",
 						"htmlAttributes":{
 							"id":"charisma",
 							"class":"dot-div"
@@ -322,7 +322,7 @@
 				"html":[
 					{
 						"htmlType":"tr",
-						"htmlContent":"<td>Manipulation: </td>",
+						"htmlContent":"Manipulation: ",
 						"htmlAttributes":{
 							"id":"manipulation",
 							"class":"dot-div"
@@ -340,7 +340,7 @@
 				"html":[
 					{
 						"htmlType":"tr",
-						"htmlContent":"<td>Appearance: </td>",
+						"htmlContent":"Appearance: ",
 						"htmlAttributes":{
 							"id":"appearance",
 							"class":"dot-div"
@@ -358,7 +358,7 @@
 				"html":[
 					{
 						"htmlType":"tr",
-						"htmlContent":"<td>Intelligence: </td>",
+						"htmlContent":"Intelligence: ",
 						"htmlAttributes":{
 							"id":"intelligence",
 							"class":"dot-div"
@@ -376,7 +376,7 @@
 				"html":[
 					{
 						"htmlType":"tr",
-						"htmlContent":"<td>Wits: </td>",
+						"htmlContent":"Wits: ",
 						"htmlAttributes":{
 							"id":"wits",
 							"class":"dot-div"
@@ -394,7 +394,7 @@
 				"html":[
 					{
 						"htmlType":"tr",
-						"htmlContent":"<td>Perception: </td>",
+						"htmlContent":"Perception: ",
 						"htmlAttributes":{
 							"id":"perception",
 							"class":"dot-div"
